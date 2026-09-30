@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>EditaloJJ | Edición de video profesional en 48 horas</title>
 <meta name="description" content="Sube tu material y recibe tu video editado en 48 horas. Reels, YouTube y anuncios.">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
@@ -27,11 +27,11 @@
 *{
   box-sizing:border-box;
   margin:0;
-  padding:0
+  padding:0;
 }
 
 html{
-  scroll-behavior:smooth
+  scroll-behavior:smooth;
 }
 
 body{
@@ -39,85 +39,93 @@ body{
   color:var(--ink);
   background:var(--paper);
   line-height:1.6;
-  font-size:17px
+  font-size:17px;
 }
 
 a{
-  color:inherit
+  color:inherit;
 }
 
 :focus-visible{
   outline:3px solid var(--blue);
-  outline-offset:3px
+  outline-offset:3px;
 }
 
 .wrap{
   max-width:1040px;
   margin:0 auto;
-  padding:0 24px
+  padding:0 24px;
 }
 
-h1,h2,h3{
+h1,
+h2,
+h3{
   font-family:var(--head);
   line-height:1.08;
-  letter-spacing:-.02em
+  letter-spacing:-.02em;
 }
 
 h1{
   font-size:clamp(2.4rem,6vw,4.2rem);
   font-weight:800;
-  max-width:14ch
+  max-width:14ch;
 }
 
 h2{
   font-size:clamp(1.7rem,3.6vw,2.4rem);
   font-weight:800;
-  margin-bottom:12px
+  margin-bottom:12px;
 }
 
 h3{
   font-size:1.25rem;
-  font-weight:600
+  font-weight:600;
 }
 
 p.lead{
   font-size:1.15rem;
   color:var(--mute);
   max-width:46ch;
-  margin:20px 0 28px
+  margin:20px 0 28px;
 }
 
+
+/* HEADER */
+
 header{
-  padding:20px 0
+  padding:20px 0;
 }
 
 header .wrap{
   display:flex;
   justify-content:space-between;
-  align-items:center
+  align-items:center;
 }
 
 .logo{
   font-family:var(--head);
   font-weight:800;
   font-size:1.3rem;
-  text-decoration:none
+  text-decoration:none;
 }
 
 .logo span{
-  color:var(--green)
+  color:var(--green);
 }
 
 nav a{
   margin-left:22px;
   text-decoration:none;
   font-weight:500;
-  color:var(--mute)
+  color:var(--mute);
 }
 
 nav a:hover{
-  color:var(--ink)
+  color:var(--ink);
 }
+
+
+/* BOTONES */
 
 .btn{
   display:inline-block;
@@ -127,45 +135,50 @@ nav a:hover{
   border-radius:10px;
   font-weight:700;
   text-decoration:none;
-  transition:transform .15s,background .15s
+  transition:transform .15s, background .15s;
 }
 
 .btn:hover{
   background:#1E45D6;
-  transform:translateY(-2px)
+  transform:translateY(-2px);
 }
 
 .btn.alt{
   background:transparent;
   color:var(--ink);
   border:2px solid var(--ink);
-  margin-left:10px
+  margin-left:10px;
 }
 
 .btn.alt:hover{
   background:var(--ink);
-  color:var(--white)
+  color:var(--white);
 }
+
+
+/* HERO */
 
 .hero{
-  padding:48px 0 72px
+  padding:48px 0 72px;
 }
 
-/* Línea de tiempo */
+
+/* LINEA DE TIEMPO */
+
 .timeline{
   margin-top:52px;
   background:var(--ink);
   border-radius:14px;
   padding:22px 22px 26px;
   position:relative;
-  overflow:hidden
+  overflow:hidden;
 }
 
 .track{
   display:flex;
   gap:6px;
   margin-bottom:8px;
-  height:34px
+  height:34px;
 }
 
 .clip{
@@ -175,23 +188,23 @@ nav a:hover{
   color:var(--white);
   white-space:nowrap;
   overflow:hidden;
-  text-overflow:ellipsis
+  text-overflow:ellipsis;
 }
 
 .v .clip{
-  background:var(--blue)
+  background:var(--blue);
 }
 
 .a .clip{
-  background:#3A4A66
+  background:#3A4A66;
 }
 
 .t .clip{
-  background:var(--green)
+  background:var(--green);
 }
 
 .clip.gap{
-  background:transparent
+  background:transparent;
 }
 
 .playhead{
@@ -201,7 +214,7 @@ nav a:hover{
   left:0;
   width:2px;
   background:var(--white);
-  animation:sweep 3.2s ease-out .4s forwards
+  animation:sweep 3.2s ease-out .4s forwards;
 }
 
 .playhead::before{
@@ -210,43 +223,48 @@ nav a:hover{
   top:0;
   left:-6px;
   border:7px solid transparent;
-  border-top:10px solid var(--white)
+  border-top:10px solid var(--white);
 }
 
 @keyframes sweep{
   to{
-    left:calc(100% - 2px)
+    left:calc(100% - 2px);
   }
 }
 
 .tl-caption{
   color:#9FB0CC;
   font-size:.85rem;
-  margin-top:14px
+  margin-top:14px;
 }
 
+
+/* SECCIONES */
+
 section{
-  padding:72px 0
+  padding:72px 0;
 }
 
 .white{
-  background:var(--white)
+  background:var(--white);
 }
 
-/* Pasos */
+
+/* PASOS */
+
 .steps{
   list-style:none;
   counter-reset:s;
   margin-top:32px;
   display:grid;
   gap:28px;
-  grid-template-columns:repeat(3,1fr)
+  grid-template-columns:repeat(3,1fr);
 }
 
 .steps li{
   counter-increment:s;
   border-top:3px solid var(--ink);
-  padding-top:16px
+  padding-top:16px;
 }
 
 .steps li::before{
@@ -255,203 +273,288 @@ section{
   font-weight:800;
   font-size:2rem;
   color:var(--green);
-  display:block
+  display:block;
 }
 
 .steps p{
   color:var(--mute);
-  margin-top:6px
+  margin-top:6px;
 }
 
-/* Planes */
+
+/* PLANES */
+
 .plans{
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:20px;
   margin-top:32px;
-  align-items:stretch
+  align-items:stretch;
 }
 
 .plan{
   background:var(--white);
   border:1px solid var(--line);
   border-radius:12px;
-  padding:28px
+  padding:28px;
 }
 
 .plan.main{
   background:var(--ink);
   color:var(--white);
   border:none;
-  transform:translateY(-8px)
+  transform:translateY(-8px);
 }
 
 .price{
   font-family:var(--head);
   font-size:2.4rem;
   font-weight:800;
-  margin:10px 0 4px
+  margin:10px 0 4px;
 }
 
 .price small{
   font-size:1rem;
   font-weight:500;
-  color:var(--mute)
+  color:var(--mute);
 }
 
 .plan.main .price small,
 .plan.main li{
-  color:#C9D3E6
+  color:#C9D3E6;
 }
 
 .plan ul{
   list-style:none;
-  margin:18px 0 24px
+  margin:18px 0 24px;
 }
 
 .plan li{
   padding:6px 0;
   border-bottom:1px solid var(--line);
-  color:var(--mute)
+  color:var(--mute);
 }
 
 .plan.main li{
-  border-color:#2A3A55
+  border-color:#2A3A55;
 }
 
 .plan .btn{
   width:100%;
-  text-align:center
+  text-align:center;
 }
 
 .plan.main .btn{
-  background:var(--green)
+  background:var(--green);
 }
 
 .plan.main .btn:hover{
-  background:#188A38
+  background:#188A38;
 }
+
+
+/* CONTACTO */
 
 .cta{
   background:var(--blue);
   color:var(--white);
-  text-align:center
+  text-align:center;
 }
 
 .cta p{
   margin:12px auto 28px;
   max-width:44ch;
-  color:#DCE4FF
+  color:#DCE4FF;
 }
 
 .cta .btn{
   background:var(--white);
-  color:var(--blue)
+  color:var(--blue);
 }
 
 .cta .btn:hover{
-  background:var(--paper)
+  background:var(--paper);
 }
+
+
+/* FOOTER */
 
 footer{
   padding:28px 0;
   color:var(--mute);
-  font-size:.9rem
+  font-size:.9rem;
 }
 
 footer .wrap{
   display:flex;
   justify-content:space-between;
   flex-wrap:wrap;
-  gap:8px
+  gap:8px;
 }
 
+footer a{
+  text-decoration:none;
+}
+
+footer a:hover{
+  color:var(--blue);
+}
+
+
+/* RESPONSIVE */
+
 @media(max-width:800px){
+
   .steps,
   .plans{
-    grid-template-columns:1fr
+    grid-template-columns:1fr;
   }
 
   .plan.main{
-    transform:none
+    transform:none;
   }
 
   nav{
-    display:none
+    display:none;
   }
 
   .btn.alt{
-    margin:12px 0 0
+    margin:12px 0 0;
   }
 }
 
+
+/* REDUCIR ANIMACIONES */
+
 @media(prefers-reduced-motion:reduce){
+
   .playhead{
     animation:none;
-    left:62%
+    left:62%;
   }
 
   html{
-    scroll-behavior:auto
+    scroll-behavior:auto;
   }
 
   .btn{
-    transition:none
+    transition:none;
   }
 }
 </style>
 </head>
 
+
 <body>
+
 
 <header>
   <div class="wrap">
-    <a class="logo" href="#">Editalo<span>JJ</span></a>
+
+    <a class="logo" href="#">
+      Editalo<span>JJ</span>
+    </a>
 
     <nav>
       <a href="#proceso">Cómo funciona</a>
       <a href="#planes">Planes</a>
       <a href="#contacto">Contacto</a>
     </nav>
+
   </div>
 </header>
 
+
 <main>
 
+
+  <!-- HERO -->
+
   <div class="hero">
+
     <div class="wrap">
 
-      <h1>Tu video editado en 48 horas.</h1>
+      <h1>
+        Tu video editado en 48 horas.
+      </h1>
 
       <p class="lead">
-        Sube tu material y nosotros hacemos los cortes, el audio,
-        los subtítulos y el color. Tú solo publicas.
+        Sube tu material y nosotros hacemos los cortes,
+        el audio, los subtítulos y el color.
+        Tú solo publicas.
       </p>
 
-      <a class="btn" href="#contacto">Pedir mi edición</a>
-      <a class="btn alt" href="#planes">Ver planes</a>
+      <a
+        class="btn"
+        href="mailto:andersonmercado296@gmail.com?subject=Quiero%20cotizar%20una%20edición"
+      >
+        Pedir mi edición
+      </a>
+
+      <a
+        class="btn alt"
+        href="#planes"
+      >
+        Ver planes
+      </a>
+
+
+      <!-- TIMELINE -->
 
       <div class="timeline" aria-hidden="true">
 
         <div class="track v">
-          <div class="clip" style="flex:3">Intro</div>
-          <div class="clip" style="flex:5">Entrevista</div>
-          <div class="clip" style="flex:2">B-roll</div>
-          <div class="clip" style="flex:4">Cierre</div>
+
+          <div class="clip" style="flex:3">
+            Intro
+          </div>
+
+          <div class="clip" style="flex:5">
+            Entrevista
+          </div>
+
+          <div class="clip" style="flex:2">
+            B-roll
+          </div>
+
+          <div class="clip" style="flex:4">
+            Cierre
+          </div>
+
         </div>
+
 
         <div class="track a">
-          <div class="clip" style="flex:8">Voz limpia</div>
-          <div class="clip" style="flex:6">Música de fondo</div>
+
+          <div class="clip" style="flex:8">
+            Voz limpia
+          </div>
+
+          <div class="clip" style="flex:6">
+            Música de fondo
+          </div>
+
         </div>
 
+
         <div class="track t">
+
           <div class="clip gap" style="flex:2"></div>
-          <div class="clip" style="flex:4">Subtítulos</div>
+
+          <div class="clip" style="flex:4">
+            Subtítulos
+          </div>
+
           <div class="clip gap" style="flex:1"></div>
-          <div class="clip" style="flex:3">Logo</div>
+
+          <div class="clip" style="flex:3">
+            Logo
+          </div>
+
           <div class="clip gap" style="flex:4"></div>
+
         </div>
+
 
         <div class="playhead"></div>
 
@@ -460,150 +563,286 @@ footer .wrap{
         </p>
 
       </div>
+
     </div>
+
   </div>
 
 
-  <section id="proceso" class="white">
+
+  <!-- COMO FUNCIONA -->
+
+  <section
+    id="proceso"
+    class="white"
+  >
+
     <div class="wrap">
 
-      <h2>Cómo funciona</h2>
+      <h2>
+        Cómo funciona
+      </h2>
 
       <p style="color:var(--mute)">
         Tres pasos, sin complicaciones.
       </p>
 
+
       <ol class="steps">
 
         <li>
-          <h3>Envía tu material</h3>
+
+          <h3>
+            Envía tu material
+          </h3>
+
           <p>
-            Sube tus videos por enlace y cuéntanos qué quieres lograr.
+            Sube tus videos por enlace y cuéntanos
+            qué quieres lograr.
           </p>
+
         </li>
 
+
         <li>
-          <h3>Editamos</h3>
+
+          <h3>
+            Editamos
+          </h3>
+
           <p>
             Cortes, audio, subtítulos, color y tu logo.
             Te enviamos una primera versión.
           </p>
+
         </li>
 
+
         <li>
-          <h3>Recibe y publica</h3>
+
+          <h3>
+            Recibe y publica
+          </h3>
+
           <p>
-            Pides ajustes si los necesitas y descargas el video final.
+            Pides ajustes si los necesitas y
+            descargas el video final.
           </p>
+
         </li>
 
       </ol>
+
     </div>
+
   </section>
 
 
+
+  <!-- PLANES -->
+
   <section id="planes">
+
     <div class="wrap">
 
-      <h2>Planes</h2>
+      <h2>
+        Planes
+      </h2>
 
       <p style="color:var(--mute)">
         Elige según cuánto contenido publicas.
       </p>
 
+
       <div class="plans">
+
+
+        <!-- REEL -->
 
         <div class="plan">
 
-          <h3>Reel</h3>
+          <h3>
+            Reel
+          </h3>
 
           <div class="price">
-            RD$1,500 <small>por video</small>
+            RD$1,500
+            <small>por video</small>
           </div>
 
           <ul>
-            <li>Video de hasta 60 segundos</li>
-            <li>Subtítulos</li>
-            <li>1 ronda de ajustes</li>
+
+            <li>
+              Video de hasta 60 segundos
+            </li>
+
+            <li>
+              Subtítulos
+            </li>
+
+            <li>
+              1 ronda de ajustes
+            </li>
+
           </ul>
 
-          <a class="btn" href="#contacto">
+          <a
+            class="btn"
+            href="mailto:andersonmercado296@gmail.com?subject=Quiero%20el%20plan%20Reel"
+          >
             Elegir Reel
           </a>
 
         </div>
 
 
+
+        <!-- CREADOR -->
+
         <div class="plan main">
 
-          <h3>Creador</h3>
+          <h3>
+            Creador
+          </h3>
 
           <div class="price">
-            RD$5,500 <small>al mes</small>
+            RD$5,500
+            <small>al mes</small>
           </div>
 
           <ul>
-            <li>4 videos al mes</li>
-            <li>Subtítulos, música y logo</li>
-            <li>2 rondas de ajustes</li>
-            <li>Entrega en 48 horas</li>
+
+            <li>
+              4 videos al mes
+            </li>
+
+            <li>
+              Subtítulos, música y logo
+            </li>
+
+            <li>
+              2 rondas de ajustes
+            </li>
+
+            <li>
+              Entrega en 48 horas
+            </li>
+
           </ul>
 
-          <a class="btn" href="#contacto">
+          <a
+            class="btn"
+            href="mailto:andersonmercado296@gmail.com?subject=Quiero%20el%20plan%20Creador"
+          >
             Elegir Creador
           </a>
 
         </div>
 
 
+
+        <!-- MARCA -->
+
         <div class="plan">
 
-          <h3>Marca</h3>
+          <h3>
+            Marca
+          </h3>
 
           <div class="price">
-            RD$12,000 <small>al mes</small>
+            RD$12,000
+            <small>al mes</small>
           </div>
 
           <ul>
-            <li>10 videos al mes</li>
-            <li>Portadas y miniaturas</li>
-            <li>Ajustes ilimitados</li>
+
+            <li>
+              10 videos al mes
+            </li>
+
+            <li>
+              Portadas y miniaturas
+            </li>
+
+            <li>
+              Ajustes ilimitados
+            </li>
+
           </ul>
 
-          <a class="btn" href="#contacto">
+          <a
+            class="btn"
+            href="mailto:andersonmercado296@gmail.com?subject=Quiero%20el%20plan%20Marca"
+          >
             Elegir Marca
           </a>
 
         </div>
 
+
       </div>
+
     </div>
+
   </section>
 
 
-  <section id="contacto" class="cta">
+
+  <!-- CONTACTO -->
+
+  <section
+    id="contacto"
+    class="cta"
+  >
 
     <div class="wrap">
 
-      <h2>¿Listo para tu primer video?</h2>
+      <h2>
+        ¿Tienes un video que necesita edición?
+      </h2>
 
       <p>
-        Escríbenos por WhatsApp y te respondemos el mismo día
-        con una cotización.
+        Escríbeme por correo y cuéntame qué tipo
+        de video necesitas editar.
       </p>
-
-      <!-- CAMBIA el número: formato 1809XXXXXXX -->
 
       <a
         class="btn"
-        href="https://wa.me/18090000000?text=Hola,%20quiero%20cotizar%20una%20edici%C3%B3n"
-        target="_blank"
-        rel="noopener"
+        href="mailto:andersonmercado296@gmail.com?subject=Quiero%20cotizar%20una%20edición"
       >
-        Escribir por WhatsApp
+        Escribirme por correo
       </a>
 
     </div>
 
   </section>
-```
+
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="wrap">
+
+    <span>
+      © 2026 EditaloJJ. Santo Domingo,
+      República Dominicana.
+    </span>
+
+    <span>
+      <a href="mailto:andersonmercado296@gmail.com">
+        andersonmercado296@gmail.com
+      </a>
+    </span>
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
